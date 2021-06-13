@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --one: #ffeedb;
+  --two: #ffd8cc;
+  --three: #ffbd9b;
+  --four: #0a1d37;
+}
+body {
+  min-height: 100vh;
+  background: var(--one);
+  header {
+    &.section {
+      .header-content {
+        .prof-hold {
+          display: flex;
+          justify-content: center;
+        }
+        .title {
+          color: var(--four);
+          font-weight: bolder;
+        }
+        .subtitle {
+          color: var(--four);
+        }
+      }
+    }
+  }
+  .works-title {
+    color: var(--four);
+  }
+  .works-holder {
+    flex-wrap: wrap;
+    .work {
+      background: var(--three);
+      min-height: 290px;
+      .work-title {
+        h1 {
+          text-transform: capitalize;
+          font-weight: bolder;
+          font-size: 21px;
+          color: var(--four);
+          letter-spacing: 1px;
+        }
+        height: 4em;
+      }
+      .last_updated {
+        opacity: 0.6;
+        color: var(--four);
+      }
+      .links {
+        .github {
+          word-wrap: break-word;
+          font-size: 21px;
+          color: var(--one);
+        }
+      }
+      .description {
+        color: var(--four);
+        padding: 1em 0;
+      }
+    }
+  }
+  .force-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      li {
+        display: block;
+        width: 100%;
+        a {
+          text-align: start;
+          padding: 14px 21px !important;
+          height: auto;
+        }
+      }
+    }
+  }
+  .loader {
+    border: 5px solid var(--four);
+    font-size: 3em;
+    border-right-color: transparent;
+  }
+}
